@@ -1,0 +1,218 @@
+let dropdown = document.querySelector('.dropdown');
+let bars = document.getElementById('bars');
+
+bars.addEventListener('click',()=>{
+    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+        dropdown.style.display = 'grid';
+    } else {
+        dropdown.style.display = 'none';
+    }
+});
+
+// Cart
+
+let cart = document.getElementById('cart');
+let container = document.getElementById('cart-container');
+let xmark = document.getElementById('xmark');
+
+cart.addEventListener('click',()=>{
+    if (container.style.display === 'none' || container.style.display === '') {
+        container.style.display = 'grid';
+        
+    } else {
+        
+        container.style.display = 'none';
+    }
+});
+xmark.addEventListener('click',() =>{
+container.style.display = 'none';
+});
+
+// Slider 
+
+   let imgbox = document.querySelector('.imgbox');
+   let imgbox2 = document.querySelector('.imgbox2');
+   let firstarrow = document.getElementById('firstarrow');
+   let secondarrow = document.getElementById('secondarrow');
+   let first = document.getElementById('first');
+   let second = document.getElementById('second');
+   let third = document.getElementById('third');
+
+   first.addEventListener('click',()=>{
+    imgbox.style.display = 'block';
+    imgbox2.style.display = 'none';
+   });
+   second.addEventListener('click',()=>{
+    imgbox.style.display = 'none';
+    imgbox2.style.display = 'block';
+   });
+   firstarrow.addEventListener('click',()=>{
+    imgbox.style.display = 'none';
+    imgbox2.style.display = 'block';
+   });
+   secondarrow.addEventListener('click',()=>{
+    imgbox.style.display = 'block';
+    imgbox2.style.display = 'none';
+   });
+
+//    DROPDOWN FILTER 
+
+document.addEventListener('DOMContentLoaded', () => {
+    let filter = document.getElementById('filter');
+    let dropdown2 = document.querySelector('.dropdown2');
+    let filterarrow = document.getElementById('filter-arrow');
+    let content2 = document.querySelector('.content2');
+    let productsContainer = document.querySelector('.products-container');
+
+    dropdown2.style.display = 'none';
+
+    filterarrow.addEventListener('click', () => {
+        if (dropdown2.style.display === 'none' || dropdown2.style.display === '') {
+            dropdown2.style.display = 'grid';
+        } else {
+            dropdown2.style.display = 'none';
+        }
+    });
+
+    content2.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+            event.preventDefault();
+            filter.textContent = event.target.textContent;
+
+            let links = document.querySelectorAll('.content2 a');
+            links.forEach(link => {
+                link.style.backgroundColor = '';
+            });
+            event.target.style.backgroundColor = 'rgb(155, 155, 155)';
+            dropdown2.style.display = 'none';
+
+            if (event.target.textContent.includes('low to high')) {
+                sortProductsByPrice('asc');
+            } else if (event.target.textContent.includes('high to low')) {
+                sortProductsByPrice('desc');
+            }
+        }
+    });
+
+    function sortProductsByPrice(order) {
+        let products = Array.from(document.querySelectorAll('.product'));
+        products.sort((a, b) => {
+            let priceA = parseFloat(a.getAttribute('data-price'));
+            let priceB = parseFloat(b.getAttribute('data-price'));
+            return order === 'asc' ? priceA - priceB : priceB - priceA;
+        });
+
+        products.forEach(product => {
+            productsContainer.appendChild(product);
+        });
+    }
+});
+
+// FILTER 
+// let filbtn = document.getElementById('filbtn');
+// let xmark3 = document.getElementById('xmark3');
+// let filterbox = document.getElementById('filterbox');
+
+
+// filbtn.addEventListener('click',()=>{
+//     if (filterbox.style.display === 'none' || filterbox.style.display === '') {
+//         filterbox.style.display = 'block';
+//     } else {
+//         filterbox.style.display = 'none';
+//     }
+// });
+// xmark3.addEventListener('click',()=>{
+//     filterbox.style.display = 'none';
+// });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     let filbtn= document.getElementById('filbtn');
+//     let filterbox = document.getElementById('filterbox');
+//     let overlay = document.createElement('div');
+//     overlay.className = 'overlay';
+//     document.body.appendChild(overlay);
+
+//     filbtn.addEventListener('click', () => {
+//         filterbox.style.display = 'block';
+//         overlay.style.display = 'block';
+//         document.body.appendChild(overlay);
+
+//     });
+//     overlay.addEventListener('click', () => {
+//         filterbox.style.display = 'none';
+//         overlay.style.display = 'none';
+//         document.body.classList.remove('blur');
+//     });
+
+// });
+
+
+let filbtn = document.getElementById('filbtn');
+    let xmark3 = document.getElementById('xmark3');
+    let filterbox = document.getElementById('filterbox');
+    let overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    document.body.appendChild(overlay);
+
+    filbtn.addEventListener('click', () => {
+        filterbox.style.display = 'block';
+        overlay.style.display = 'block';
+        document.querySelector('main').classList.add('blur');
+        document.body.classList.add('no-scroll');
+
+    });
+
+    xmark3.addEventListener('click', () => {
+        filterbox.style.display = 'none';
+        overlay.style.display = 'none';
+        document.querySelector('main').classList.remove('blur');
+        document.body.classList.remove('no-scroll');
+
+    });
+
+    overlay.addEventListener('click', () => {
+        filterbox.style.display = 'none';
+        overlay.style.display = 'none';
+        document.querySelector('main').classList.remove('blur');
+        document.body.classList.remove('no-scroll');
+    });
+
+    let filtertext = document.querySelector('.filter-text');
+    let filtertext2 = document.querySelector('.filter-text2');
+
+    first.addEventListener('click', () => {
+       filtertext.style.display = 'block';
+         filtertext2.style.display = 'none';
+    });
+    second.addEventListener('click', () => {
+        filtertext.style.display = 'none';
+        filtertext2.style.display = 'block';
+    });
+    firstarrow.addEventListener('click', () => {
+        filtertext.style.display = 'none';
+        filtertext2.style.display = 'block';
+    });
+    secondarrow.addEventListener('click', () => {
+        filtertext.style.display = 'block';
+        filtertext2.style.display = 'none';
+    });
+
+    document,addEventListener('DOMContentLoaded',()=>{
+
+    let filterprice = document.getElementById('filterprice');
+    let filterprice2 = document.getElementById('filterprice2');
+    let filterinputStart = document.getElementById('filterinput-start');
+    let filterinputlast = document.getElementById('filterinput-last');
+
+
+    filterprice.addEventListener('input',() => {
+    filterinputStart.textContent = filterprice.value;
+
+    });
+
+    });
+
+    // filter range bar
+    // document.addEventListener('DOMContentLoaded',()=>{
+    //  const f
+    // });

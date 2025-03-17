@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store-Jewellery</title>
+    <link rel="stylesheet" href="store.css">
+    <script src="https://kit.fontawesome.com/9ad8bac78a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    
+    <img src="logo2.png" height="70" width="160" id="logo" loading="lazy">
+     <!-- Navigation Bar -->
+
+     <nav class="navbar">
+        <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about us.html">About Us</a></li>
+<li><a href="store.html" id="store">Store</a></li>
+<li><a href="earring.html">Earring</a></li>
+<li><a href="rings.html">Ring</a></li>
+<li><a href="necklace.html">Necklace</a></li>
+<li><a href="My account.html">My account</a></li>
+<li><a href="contact us.html">Contact Us</a></li>
+       </ul>
+  </nav>
+
+  
+      <!-- DROPDOWN MENU -->
+
+      <i class="fa-solid fa-bars" style="color: #fcd64c;" id="bars"></i>
+      <div class="dropdown">
+      <div class="content">
+          <a href="index.html" >Home</a>
+          <a href="about Us.html">About Us</a>
+          <a href="store.html" id="store">Store</a>
+          <a href="earring.html">Earring</a>
+          <a href="rings.html">Rings</a>
+          <a href="necklace.html">Necklace</a>
+          <a href="My account.html">My account</a>
+          <a href="contact us.html">Contact Us</a>
+      
+      </div>
+      </div>
+      
+      <!-- End -->
+
+      <!-- CART -->
+
+    <i class="fa-solid fa-cart-shopping shopCartIcon " style="color: #FFD43B;" id="cart"></i><sup class="cart-counter">0</sup>
+
+    <span class="ast-woo-header-cart-info-wrap">
+        Cart /<span class="ast-woo-header-cart-total"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol"> $</span>0.00</bdi></span></span>
+    </span>
+
+    <div id="cart-container">
+     <p id="text7">SHOPPING CART</p>
+     <div style="height: 51em; border-top: 1px solid rgb(255, 255, 255); " id="line"></div>
+     <p id="text8">No products in the cart.</p>
+     <i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;" id="xmark"></i>
+     <button id="btn4">CONTINUE SHOPPING</button>
+
+    <!-- <div class="cart-product">
+        <img src="ring1.png" id="cartimage" class="photo" height="100px" width="100px">
+        <p class="text1" id="text1Id"><span class="ring1" id="ring1Id">Rings</span><br><br><span class="firstpic" id="firstpicId">Couple Silver Ring Diamond</span><br><span class="tagprice" id="tagpriceId">$99.00</span></p>
+        <i class="fa-solid fa-xmark fa-sm" style="color: #ffffff;" id="xmark3Id"></i>
+     <div style="height: 51em; border-top: 1px solid rgb(255, 255, 255); " id="line2"></div>
+     <div class="cart-product-quantity">
+        <button class="cart-increase"><b>+</b></button><span class="cart-count">1</span><button class="cart-decrease"><b>-</b></button>
+        </div> -->
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+<!-- End -->
+
+<!-- <div id="yellow2">
+          <h1 id="text14">Premium Elite Membership</h1> 
+          <p id="text15">Unlock exclusive benefits and <br>  premium content.</p>
+          <button id="btn8">UNLOCK NOW</button> 
+        </div> -->
+
+<!-- Copyright -->
+        <div id="copyright">
+            <h4 id="copy1">Copyright &COPY; 2024 Prestige</h4>
+            <h4 id="copy2">All Rights Reserved.</h4>
+            <h4 id="copy3">Powered by Prestige</h4>
+       </div>
+<!-- End -->
+
+<div class="blackbox">
+    
+    <div class="imgbox">
+
+        <div class="product" data-price="99.00" data-product-id="1">
+        <img src="ring1.png" id="ring1" class="photo" alt="gaurav">
+        <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;"></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+        <p class="text1"><span class="ring1">Rings</span><br><br><span class="firstpic">Couple Silver Ring Diamond</span><br><span class="tagprice"><s style="color: gray;" id="strikethrough">$123.00</s>&NonBreakingSpace;$99.00</span></p>
+        <span class="product-Description">Our exquisite wedding and engagement rings feature a round-cut diamond solitaire set in white gold or platinum, accented with pavé diamonds. These rings epitomize sophistication and timeless beauty, making them a perfect symbol of enduring love. Impeccably crafted, they capture hearts at first glance. Enhance your collection with our luxurious designs.</span>
+
+        <span class="text-discount-percentage" id="discount1">-20%</span>
+
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        
+         </div>
+         
+        </div>
+
+        <div class="product" data-price="185.00" data-product-id="2">
+        <img src="pendant1.png" id="pendant1" class="photo" >
+        <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+        <p class="text1" id="textid1"><span class="ring1">Necklace</span><br><br><span class="firstpic">Silver Diamond Necklace</span><br><span class="tagprice">$185.00</span></p>
+        <span class="product-Description">Enhance your elegance with this exquisite necklace featuring a square-shaped pendant adorned with sparkling diamonds. The fine, box-style chain adds sophistication, making it a perfect accessory for special occasions. Crafted with precision and luxury in mind, this necklace adds a touch of glamour to any outfit. Ideal for those seeking refinement in their jewelry collection.</span>
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        
+         </div>
+        </div>
+
+        <div class="product" data-price="95.00" data-product-id="3">
+        <img src="ring2.png" id="ring2" class="photo" >
+        <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+        <p class="text1" id="textid2"><span class="ring1">Rings</span><br><br><span class="firstpic">Diamond Wedding Ring</span><br><span class="tagprice">$95.00</span></p>
+        <span class="product-Description">Celebrate your love with this stunning wedding ring featuring a round-cut diamond solitaire set in white gold or platinum. The band is adorned with pavé diamonds, adding a touch of elegance to the design. This ring is a symbol of eternal love and commitment, making it the perfect choice for your special day. Impeccably crafted, it captures the essence of romance and sophistication.</span>
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        
+         </div>
+        </div>
+
+        <div class="product" data-price="105.00" data-product-id="4">
+        <img src="ring3.png" id="ring3" class="photo" >
+        <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+        <p class="text1" id="textid3"><span class="ring1">Rings</span><br><br><span class="firstpic">Golden Diamond Earrings</span><br><span class="tagprice">$105.00</span></p>
+        <span class="product-Description">Add a touch of glamour to your look with these stunning diamond earrings. Featuring a round-cut diamond set in a gold or platinum setting, these earrings are perfect for any occasion. The elegant design and sparkling diamonds make them a must-have accessory for those who appreciate luxury and sophistication. Elevate your style with these exquisite earrings that are sure to turn heads.</span>
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        
+         </div>
+        </div>
+
+        <div class="product" data-price="145.00" data-product-id="5">
+        <img src="pendant2.png" id="pendant2" class="photo" >
+        <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+        <p class="text1" id="textid4"><span class="ring1">Necklace</span><br><br><span class="firstpic">Silver Drop Necklace</span><br><span class="tagprice">$145.00</span></p>
+        <span class="product-Description">Make a statement with this elegant drop necklace featuring a sparkling diamond pendant. The necklace is crafted from high-quality materials and designed to complement any outfit. The timeless design and exquisite craftsmanship make it a versatile accessory that can be worn for any occasion. Elevate your style with this stunning necklace that is sure to turn heads.</span>
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        
+         </div>
+        </div>
+
+        <div class="product" data-price="175.00" data-product-id="6">
+        <img src="ring4.png" id="ring4" class="photo" >
+        <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+        <p class="text1" id="textid5"><span class="ring1">Earring</span><br><br><span class="firstpic">Earring & Necklace Set</span><br><span class="tagprice">$175.00</span></p>
+        <span class="product-Description">Complete your look with this stunning earring and necklace set. The set features a pair of diamond earrings and a matching necklace, both crafted from high-quality materials. The elegant design and sparkling diamonds make this set a must-have for any jewelry collection. Whether you're dressing up for a special occasion or adding a touch of glamour to your everyday look, this set is the perfect choice.</span>
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        
+         </div>
+        </div>
+        
+        <div class="product" data-price="125.00" data-product-id="7">
+        <img src="pendant3.png" id="pendant3" class="photo" >
+        <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+        <p class="text1" id="textid6"><span class="ring1">Rings</span><br><br><span class="firstpic">Couple Engagement Rings</span><br><span class="tagprice"><s style="color: gray;" id="strikethrough">$150.00</s>&NonBreakingSpace;$125.00</span></p>
+        <span class="product-Description">Showcase the beauty of this stunning necklace featuring a rectangular-shaped gemstone, surrounded by a halo of dazzling diamonds. The intricate silver chain adds a touch of elegance, making it the perfect accessory for any occasion. Meticulously crafted, this piece exudes luxury and refinement. Ideal for those seeking timeless sophistication in their jewelry collection.</span>
+
+        <span class="text-discount-percentage" id="discount1">-17%</span>
+
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        
+         </div>
+        </div>
+
+        <div class="product" data-price="85.00" data-product-id="8">
+        <img src="ring5.png" id="ring5" class="photo" >
+        <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+        <p class="text1" id="textid7"><span class="ring1">Earrings</span><br><br><span class="firstpic">Maroon Diamond Earrings</span><br><span class="tagprice">$85.00</span></p>
+        <span class="product-Description">Showcase the beauty of these gold earrings featuring oval-shaped red gemstones, likely rubies, surrounded by sparkling diamonds. The luxurious design and elegant combination of colors make these earrings a perfect accessory for any occasion. Meticulously crafted with a clip-on mechanism, they exude sophistication and timeless charm. Ideal for those seeking refined elegance in their jewelry collection.</span>
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        
+         </div>
+        </div>
+    </div>
+        
+        
+        <div class="imgbox2">
+
+           <div class="product" data-price="100.00" data-product-id="9">
+            <img src="pendant5.png" id="ring6" class="photo" >
+            <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+            <p class="text1" id="textid8"><span class="ring1">Necklace</span><br><br><span class="firstpic">Purple Heart Pendant</span><br><span class="tagprice">$100.00</span></p>
+            <span class="product-Description">Showcase the elegance of these two gold necklaces, each featuring a stunning circular pendant encrusted with sparkling stones. The left necklace has a larger circular pendant with a smaller triangular section at the top, while the right one has a similar large circular pendant with a smaller circular section at the top. Both pieces exude luxury and sophistication, perfect for adding a touch of glamour to any outfit. Ideal for those seeking refined beauty in their jewelry collection.</span>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            
+             </div>
+            </div>
+
+            <div class="product" data-price="105.00" data-product-id="10">
+            <img src="pendant4.png" id="pendant4" class="photo" >
+            <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+            <p class="text1" id="textid9"><span class="ring1">Necklace</span><br><br><span class="firstpic"> Maroon Diamond Pendant</span><br><span class="tagprice">$105.00</span></p>
+            <span class="product-Description">Showcase the beauty of this heart-shaped jewelry set, featuring a pendant necklace and matching earrings adorned with sparkling stones. The necklace and earrings exude elegance and romance, enhanced by the red rose petals scattered around them. Perfect for special occasions or as a heartfelt gift, this coordinated set is designed to captivate and enchant. Ideal for those seeking timeless sophistication in their jewelry collection.</span>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            
+             </div>
+            </div>
+
+            <div class="product" data-price="205.00" data-product-id="11">
+            <img src="ring6.png" height="300px" width="300px" id="ring6" class="photo" >
+            <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+            <p class="text1" id="textid10"><span class="ring1">Rings</span><br><br><span class="firstpic">Golden Round Ring</span><br><span class="tagprice">$205.00</span></p>
+            <span class="product-Description">This luxurious gold ring features a unique design with multiple rows of small diamonds arranged in a captivating pattern. The centerpiece is a square-shaped cluster of diamonds, surrounded by curved rows of smaller diamonds that extend along the band. Meticulously crafted and set against a green fabric background, this ring's brilliance and elegance are truly highlighted. A perfect choice for those seeking a statement piece that exudes sophistication and luxury.</span>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            
+             </div>
+             </div>
+
+            <div class="product" data-price="265.00" data-product-id="12"> 
+            <img src="ring7.png" height="300px" width="300px" id="ring7" class="photo" >
+            <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #ffffff; display: none;"></i>
+            <p class="text1" id="textid11"><span class="ring1">Rings</span><br><br><span class="firstpic">Pink Diamond Ring</span><br><span class="tagprice">$265.00</span></p>
+            <span class="product-Description">Enhance your elegance with our luxurious rose gold rings, each adorned with a large, round-cut diamond in an intricate prong setting. The brilliance of the diamonds and the warm hue of the rose gold create a striking contrast, making these rings perfect for any special occasion. Crafted with sophistication and artistic design, they are a true symbol of fine jewelry craftsmanship. Ideal for those seeking timeless beauty in their jewelry collection.</span>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            
+             </div>
+            </div>
+
+            <div class="product" data-price="165.00" data-product-id="13">
+            <img src="chain1.png" height="300px" width="300px" id="chain1" class="photo" >
+            <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+            <p class="text1" id="textid12"><span class="ring1">Chain</span><br><br><span class="firstpic">Diamond Circled Chain</span><br><span class="tagprice">$165.00</span></p>
+            <span class="product-Description">Enhance your elegance with this exquisite gold necklace featuring a central pearl surrounded by a geometric gold frame embedded with small diamonds. The delicate gold link chain adds sophistication, making it a perfect accessory for special occasions. Crafted with precision, this necklace combines the classic beauty of pearls with the sparkle of diamonds and the warmth of gold. Ideal for those seeking timeless refinement in their jewelry collection.</span>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            
+             </div>
+            </div>
+
+            <div class="product" data-price="125.00" data-product-id="14">
+            <img src="bangle.png" height="300px" width="300px" id="bangle" class="photo" >
+            <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+            <p class="text1" id="textid13"><span class="ring1">Braclet</span><br><br><span class="firstpic">Golden Braclet</span><br><span class="tagprice">$125.00</span></p>
+            <span class="product-Description">Elegant and sophisticated, this gold bracelet features a rectangular link design with a central section adorned with sparkling diamonds or diamond-like stones. The bracelet secures with a box clasp and safety latch, ensuring both beauty and security. Ideal for formal or special occasions, this piece adds a touch of luxury to any ensemble. Elevate your jewelry collection with this stunning bracelet.</span>
+
+            
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            
+             </div>
+            </div>
+
+            <div class="product" data-price="295.00" data-product-id="15">
+            <img src="chain2.png" height="300px" width="300px" id="chain2" class="photo" >
+            <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+            <p class="text1" id="textid14"><span class="ring1">Chain</span><br><br><span class="firstpic">Radiant Chain</span><br><span class="tagprice">$295.00</span></p>
+            <span class="product-Description">Showcase the beauty of this elegant gold chain necklace with a classic curb link design. Its uniform, polished links create a timeless and sophisticated look, perfect for adding a touch of luxury to any outfit. Ideal for those who appreciate durability and style in their jewelry collection. Elevate your elegance with this stunning piece.</span>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            
+             </div>
+            </div>
+
+            <div class="product" data-price="102.00" data-product-id="16"> 
+            <img src="bangle2.png" height="300px" width="300px" id="bangle2" class="photo" >
+            <i class="fa-solid fa-eye eyeicon" style="color: #ffffff; display: none;" ></i>
+        <i class="fa-solid fa-cart-shopping fa-lg shop-cart" style="color: #000000; display: none;"></i>
+            <p class="text1" id="textid15"><span class="ring1">Braclet</span><br><br><span class="firstpic">Elegant Gold Braclet</span><br><span class="tagprice">$102.00</span></p>
+            <span class="product-Description">Showcase the beauty of this elegant gold chain bracelet featuring a combination of large oval links and smaller chain links. The intricate design exudes sophistication, making it a perfect accessory for any occasion. Crafted with precision, this bracelet adds a touch of luxury to any outfit. Ideal for those seeking timeless elegance in their jewelry collection.</span>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            
+             </div>
+            </div>
+
+
+ 
+            
+            
+        </div>
+    
+
+
+
+
+
+        <!-- <path><?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:white;}</style></defs><title/><g data-name="Layer 2" id="Layer_2"><path d="M23.52,29h-15a5.48,5.48,0,0,1-5.31-6.83L6.25,9.76a1,1,0,0,1,1-.76H24a1,1,0,0,1,1,.7l3.78,12.16a5.49,5.49,0,0,1-.83,4.91A5.41,5.41,0,0,1,23.52,29ZM8,11,5.11,22.65A3.5,3.5,0,0,0,8.48,27h15a3.44,3.44,0,0,0,2.79-1.42,3.5,3.5,0,0,0,.53-3.13L23.28,11Z"/><path d="M20,17a1,1,0,0,1-1-1V8a3,3,0,0,0-6,0v8a1,1,0,0,1-2,0V8A5,5,0,0,1,21,8v8A1,1,0,0,1,20,17Z"/></g><g id="frame"><rect class="cls-1" height="3" width="3"/></g></svg></path>
+        <?xml version="1.0" ?>
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>.cls-1{fill:none;}</style>
+    </defs>
+    <title/>
+    <g data-name="Layer 2" id="Layer_2">
+        <path d="M23.52,29h-15a5.48,5.48,0,0,1-5.31-6.83L6.25,9.76a1,1,0,0,1,1-.76H24a1,1,0,0,1,1,.7l3.78,12.16a5.49,5.49,0,0,1-.83,4.91A5.41,5.41,0,0,1,23.52,29ZM8,11,5.11,22.65A3.5,3.5,0,0,0,8.48,27h15a3.44,3.44,0,0,0,2.79-1.42,3.5,3.5,0,0,0,.53-3.13L23.28,11Z" fill="white"/>
+        <path d="M20,17a1,1,0,0,1-1-1V8a3,3,0,0,0-6,0v8a1,1,0,0,1-2,0V8A5,5,0,0,1,21,8v8A1,1,0,0,1,20,17Z" fill="white"/>
+    </g>
+    <g id="frame">
+        <rect class="cls-1" height="32" width="32"/>
+    </g>
+</svg> -->
+
+
+
+
+<!-- Slider -->
+ <div class="slider">
+<p id="firstarrow">&#8592;</p>
+<p  id="first">1</p>
+<p id="second">2</p>
+<p id="secondarrow">&#8594;</p>
+</div>
+<!-- END -->
+
+
+
+
+<button id="filbtn">&NonBreakingSpace;&NonBreakingSpace;<i class="fa-solid fa-filter"></i> FILTER</button>
+<p class="filter-text"> Showing <span class="start">1</span>-<span class="end">8</span> of <span class="total">16</span> results</p>
+<p class="filter-text2"> Showing <span class="start">9</span>-<span class="end">16</span> of <span class="total">16</span> results</p>
+
+
+
+<!-- <div id="filterbox">
+    <p id="filtertext">Filter By</p>
+    <p id="filtertext2">Price</p>
+    <input type="range" id="price" min="0" max="500" value="0">
+    <p id="filtertext3">Rating</p>
+    <input type="range" id="rating" min="0" max="5" value="0">
+    <p id="filtertext4">Color</p>
+    <input type="color" id="color">
+    <button id="filterbtn2">Apply</button>
+ -->
+
+</div>
+
+<!-- DROPDOWN FILTER -->
+<p id="filter">&NonBreakingSpace;Filter By Sort</p>
+<i class="fa-solid fa-angle-down fa-lg" style="color: #ffffff;" id="filter-arrow"></i>
+<div class="dropdown2">
+ <div class="content2">
+<a href="">Sort by popularity</a>
+<a href="">Sort by average rating</a>
+<a href="">Sort by latest</a>
+<a href="">Sort by price: low to high</a>
+<a href="">Sort by price: high to low</a>
+
+
+ </div>
+</div>
+
+
+<!-- Filter -->
+
+<div id="filterbox">
+    <i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;" id="xmark3"></i>
+    <div id="filterborder">
+     <input type="search" id="search" placeholder="Search Products....">
+     </div>
+     <button id="searchicon">&#x2315</button>
+
+     <p id="filtertext2">Filter By Price</p>
+     
+    <input type="range" id="filterprice" min="0" max="300" value="0" step="0">
+    <p id="filterinput">Price: $<span id="filterinput-start">0</span> - $<span id="filterinput-last">300</span></p>
+
+    <button id="filterbtn3">Filter</button>
+    <p id="filtertext3">Top rated products</p>
+
+    <div class="filterimg">
+
+        <div id="firstinput">
+    <img src="ring6.png" height="70px" width="70px" class="filterimg1">
+    <p class="filtertext4">Golden Round Ring</p>
+    <div class="star-rating2">
+        <span class="star2" data-value="1">&#9733;</span>
+        <span class="star2" data-value="2">&#9733;</span>
+        <span class="star2" data-value="3">&#9733;</span>
+        <span class="star2" data-value="4">&#9733;</span>
+        <span class="star2" data-value="5">&#9733;</span>
+     </div>
+     <span class="rate">$205.00</span>
+    <div style="width: 16.5em; border-bottom: 1px solid rgb(255, 255, 255); " class="lineji"></div>
+    </div>
+
+    <div id="secondinput">
+    <img src="chain2.png" height="70px" width="70px" class="filterimg1">
+    <p class="filtertext4">Radiant Chain</p>
+    <div class="star-rating2">
+        <span class="star2" data-value="1">&#9733;</span>
+        <span class="star2" data-value="2">&#9733;</span>
+        <span class="star2" data-value="3">&#9733;</span>
+        <span class="star2" data-value="4">&#9733;</span>
+        <span class="star2" data-value="5">&#9733;</span>
+     </div>
+     <span class="rate">$295.00</span>
+    <div style="width: 16.5em; border-bottom: 1px solid rgb(255, 255, 255); " class="lineji"></div>
+    </div>
+
+    <div id="thirdinput">
+    <img src="pendant1.png" height="70px" width="70px" class="filterimg1">
+    <p class="filtertext4">Silver Diamond Necklace</p>
+    <div class="star-rating2">
+        <span class="star2" data-value="1">&#9733;</span>
+        <span class="star2" data-value="2">&#9733;</span>
+        <span class="star2" data-value="3">&#9733;</span>
+        <span class="star2" data-value="4">&#9733;</span>
+        <span class="star2" data-value="5">&#9733;</span>
+     </div>
+     <span class="rate">$185.00</span>
+    <div style="width: 16.5em; border-bottom: 1px solid rgb(255, 255, 255); " class="lineji"></div>
+
+
+        </div>
+
+     
+    </div>
+
+    </div>
+
+
+<!-- END -->
+
+
+
+
+<div class="quickview">
+<img src="" height="560px" width="500px" class="quickviewimg" id="quickviewimg">
+<i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;" id="exit1"></i>
+<span class="product-name"></span><br>
+<span class="product-price"></span><br>
+<span class="about-product"></span><br>
+<span class="category">Category:<span class="product-category"></span></span>
+<div class="product-quantity">
+    <button class="increase"><b>+</b></button><span class="count">1</span><button class="decrease"><b>-</b></button>
+    </div>
+<!-- <button class="add-to-cart">Add to Cart</button> -->
+ <button class="add-to-cart">Add to Cart</button>
+
+</div>
+
+
+
+
+
+
+<script src="store.js"></script>
+
+</body>
+</html>

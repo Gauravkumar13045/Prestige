@@ -1,0 +1,674 @@
+body{
+    background-image: url(bgimage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+ #about {
+   color: rgb(229, 180, 18);
+}
+#bars{
+    display: none;
+   margin-left: 65em;
+   margin-top: 8em;
+    
+}
+#logo{   
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    left:45em;
+    top: 2em;
+    transform: translate(-50%, -50%, -50%);
+}
+.navbar{
+    position: absolute;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+    margin: 0em;  
+    margin-top: 7.5em;
+    margin-left: 9em;
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.15vw;
+    display: block;
+    padding: 0.2em;
+    border-radius: 1em;
+    cursor: pointer;
+    font-family: sans-serif;
+
+}
+.navbar a:hover{
+    color: rgb(229, 180, 18);
+    opacity: 1;   
+}
+.navbar li{
+    margin-left: 1.9em;
+    float: inline-start;
+}
+.ast-woo-header-cart-info-wrap{
+    color: #ffde68;
+    position: absolute;
+    margin-left: 68em;
+    margin-top: 6.3em;
+    font-size: 1.15vw;
+    cursor: pointer;
+    font-weight: bold;
+}
+#cart{
+    margin-left: 90em;
+    margin-top: 7.8em;
+    position: absolute;
+    cursor: pointer;
+    font-weight: bold;
+}
+#cart-container{
+    border: 1px solid rgb(148, 148, 148);
+    height: 54em;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    margin-left: 69.2em;
+    margin-top: -0.5em;
+    z-index: 2;
+    width: 35.2em;
+    display: none;
+    overflow: auto;
+    position: relative;
+    border-radius: 1%;
+    font-family: sans-serif;
+   
+    
+}
+#line{
+    margin-left: 0em;
+}
+#text7{
+    text-align: left;
+    font-size: 1vw;
+    margin-left: 1em;
+    
+}
+#text8{
+    color: white;
+    position: absolute;
+    margin-top: 19em;
+    font-family: sans-serif;
+    font-size: 1.3vw;
+    margin-left: 8em;
+    
+}
+#xmark{
+    position: absolute;
+    margin-left: 26em;
+    margin-top: 1.3em;
+    cursor: pointer;
+}
+#btn4{
+    position: absolute;
+    border: 1px solid yellow;
+    border-radius: 2em;
+    height: 3em;
+    width: 26.5em;
+    font-size: 1.2vw;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 38em;
+    margin-left: 0.7em;
+    z-index: 2;
+}
+#btn4:hover{
+    background-color: rgb(248, 248, 61);
+    color: black;
+    font-weight:100;
+}
+#copyright{
+    color: white;
+    border: 0px solid white;
+    background-color: rgb(17, 17, 17);
+    position: absolute;
+    margin-left: 0em;
+    margin-top: 168em;
+    width: 99.3%;
+    height: 8em;
+}
+#copy1{
+    text-align: center left;
+    position: absolute;
+    margin-top: 3em;
+}
+#copy2{
+    text-align: center ;
+    margin-top: 3em;
+    
+}
+#copy3{
+   margin-left: 94em;
+   margin-top: -2.5em;
+    position: absolute;
+}
+#yellow2{
+    color: rgb(0, 0, 0);
+    height: 8em;
+    background-color: rgb(252, 129, 47);
+    position: absolute;
+    margin-top: 120.5em;
+    margin-left: 10em;
+    width: 83.4em;
+    display: grid;
+   
+}
+#text14{
+    font-size: 3vw;
+    margin-left: 1.5em;
+    margin-top: 0.7em;
+    font-weight: bolder;
+    position: absolute;
+}
+#text15{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-left: 29em;
+    margin-top: 1.7em;
+}
+#btn8{
+    position: absolute;
+    border: none;
+    border-radius: 2em;
+    height: 3em;
+    width: 9em;
+    font-size: 1.2vw;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: black;
+    margin-top: 1.6em;
+    margin-left: 55em;
+    
+}
+#btn8:hover{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.dropdown{
+    display: none;
+}
+#goldsmith{
+    height: 40em;
+    width: 83.5em;
+    margin-left: 10em;
+    margin-top: 13.5em;
+   filter: brightness(70%);
+   
+   position: absolute;
+}
+#text16{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 9.5em;
+    margin-top: 4.3em;
+    z-index: 2;
+    font-size: 5vw;
+    /* margin-left: 9.5em;
+    margin-top: -5.8em; */
+}
+#line{
+    width: 8em;
+    margin-left: 51em;
+    margin-top: 36.3em;
+    position: absolute;
+}
+#text18{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 32em;
+    margin-top: 24.3em;
+    z-index: 2;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    font-weight: 50;
+}
+#text19{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    font-size: 5vw;
+    margin-left: 3.1em;
+    margin-top: 13em;
+}
+#diaflower{
+    position: absolute;
+    margin-left: 10em;
+    height: 40em;
+    width: 83.5em;
+    margin-top: 53.6em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    filter: brightness(50%);
+}
+.pic{
+    position: absolute;
+    margin-top: 8.5em;
+}
+#text20{
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.5vw;
+    margin-top: 40em;
+    margin-left: 10.7em;
+    z-index: 2;
+}
+#blackbox{
+    position: absolute;
+    border: none;
+    background-color: rgb(33, 33, 33);
+    color: rgb(0, 0, 0);
+    width: 83.4em;
+    height: 27em;
+    margin-left: 10em;
+    margin-top: 93.6em;
+    
+    
+}
+#text17{
+    font-size: 2.4vw;
+    text-align: center ;
+    color: white;
+    position: absolute;
+    margin-left: 13em;
+    margin-top: 1.5em;
+}
+#text21{
+    color: white;
+    margin-top: 49em;
+    margin-left: 10.3em;
+    z-index: 2;
+    font-size: 1.5vw;
+    position: absolute;
+}
+.pic{
+    justify-content: space-evenly;
+}
+#tanishq{
+    height: 15em;
+    width: 30em;
+    margin-left: -4em;
+    position: absolute;
+}
+#kalyan{
+    height: 14em;
+    width: 14em;
+    margin-left: 24em;
+    position: absolute;
+    margin-top: 0.8em;
+}
+#reliance{
+    height: 12em;
+    width: 17em;
+    margin-left: 44em;
+    margin-top: 2em;
+    position: absolute;
+}
+#malabar{
+    height: 11em;
+    width: 15em;
+    margin-left: 65em;
+    margin-top: 0em;
+    position: absolute;
+}
+#blackbox2{
+    color: whitesmoke;
+    border: none;
+    background-color: rgb(22, 22, 22);
+    height: 36.7em;
+    width: 83.3em;
+    margin-left: 10em;
+    margin-top: 128.5em;
+    position: absolute;
+}
+#text23{
+   position: absolute;
+   color: white;
+   z-index: 2;
+   font-size: 1.7em;
+   margin-left: 9em;
+   margin-top: 79em;
+}
+#text22{
+    position: absolute;
+   color: white;
+   z-index: 2;
+   font-size: 2.5em;
+   margin-left: 6em;
+   margin-top: 55.5em;
+}
+#text24{
+    position: absolute;
+    color: white;
+    font-size: 1.5vw;
+    margin-left: 9.5em;
+   margin-top: 93em;
+   z-index: 2;
+   font-weight: bolder;
+
+}
+#video{
+    margin-left: 45em;
+    margin-top: 5em;
+}
+#text25{
+    display: none;
+}
+#hack{
+    z-index: 2;
+    margin-left: 45em;
+    margin-top: 10em;
+}
+#play{
+    position: absolute;
+    margin-top: 9em;
+    margin-left: -8em;
+    cursor: pointer;
+}
+#lastbtn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    
+}
+#lastbtn a:hover{
+    color: #000000;
+}
+#lastbtn{
+    position: absolute;
+    border: 1px solid yellow;
+    border-radius: 2em;
+    height: 3em;
+    width: 10em;
+    font-size: 1.2vw;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 2;
+    margin-left: -56em;
+    margin-top: 23.9em;
+    
+}
+#lastbtn:hover{
+    background-color: rgb(248, 248, 61);
+    color: #000;
+    font-weight:100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1080px){
+    .navbar{
+        display: none;
+        
+    }
+    #bars{
+        display: block;
+        margin-left: 23em;
+        margin-top: 1.5em;
+        position: absolute;
+        cursor: pointer;
+    }
+    #logo{
+        max-width: 100%;
+        height: auto;
+        top: 1em;
+        left: 0em;
+        position: absolute;
+    }
+    body{
+        background-size: cover;
+    }
+    #cart{
+        position: absolute;
+        margin-left: 19.5em;
+        margin-top: 1.5em;
+        cursor: pointer;
+        display: block;
+    }
+    .dropdown{
+       
+        display: none;
+        margin-top: 6em;
+        z-index: 2;
+        position: absolute;
+    }
+    .dropdown a{
+        color: rgb(0, 0, 0);
+        display: block;
+        text-decoration: none;
+        background-color: white;
+        font-size: 2.2vh;
+        justify-content: space-between;
+        border: 0.1px solid rgb(238, 237, 237);
+        width: 21em;
+        margin-left: -0.4em;
+        
+    }   
+    .content a:hover{
+        background-color: rgb(194, 194, 194);
+        color: rgb(248, 248, 61);
+        
+    }
+    .content a{
+        padding: 10px 10px;      
+    }
+    .ast-woo-header-cart-info-wrap{
+        display: none;
+        position: absolute;
+    }
+    #goldsmith
+    {
+        position: absolute;
+        margin-left: -0.5em;
+        margin-top: 7em;
+        max-width: 100%;
+        height: 20em;
+        filter: brightness(85%);
+    }
+    #text16{
+        position: absolute;
+        z-index: 1;
+        font-size: 9vw;
+        margin-top: 5em;
+        margin-left: 0.5em;
+        
+    }
+    #line{
+        position: absolute;
+        
+        margin-left: 1.4em;
+        margin-top: 18em;
+        width: 5em;
+        border-top: 1px solid rgb(255, 247, 16);
+        
+    }#text18{
+        position: absolute;
+        margin-top: 27em;
+        font-size: 2.9vw;
+        font-weight: bold;
+        margin-left: 1.5em;
+        filter: brightness(100%);
+        color: #ffffff;
+        z-index: 1;
+    }
+    #text19{
+       position:absolute;
+       margin-top: 16.3em;
+       margin-left: 0.4em;
+       font-size: 8vw;
+    }
+    #text20{
+       position:absolute;
+       margin-top: 30em;
+       margin-left: 1em;
+       font-size: 4vw;
+    }
+    #text21{
+       position:absolute;
+       margin-top: 48.5em;
+       margin-left: 1.4em;
+       font-size: 3vw;
+       
+    }
+    #diaflower{
+        position: absolute;
+        margin-left: -0.5em;
+        margin-top: 27em;
+        max-width: 100%;
+        height: 20em;
+        filter: brightness(50%);
+
+    }
+    #blackbox{
+        position: absolute;
+        margin-left: -0.5em;
+        margin-top: 47em;
+        max-width: 100%;
+        height: 20em;
+        
+    }
+    #text24{
+        margin-top: 250em;
+    }
+
+    #text17{
+        margin-left: 6.5em;
+        font-size: 5vw;
+    }
+    #tanishq{
+        width: 15em;
+        height: 7.5em;
+        margin-top: -4.5em;
+        margin-left: 0em;
+        position: absolute;
+    }
+    #kalyan{
+        position: absolute;
+        width: 7em;
+        height: 7em;
+        margin-top: -4.5em;
+        margin-left: 15em;
+    }
+    #reliance{
+        margin-left: 0em;
+        font-size: 2vw;
+        margin-top: 6em;
+        margin-left: 5.5em;
+    }
+    #malabar
+    {
+        margin-left: 0em;
+        font-size: 1.7vw;
+        margin-top: 7em;
+        margin-left: 35em;
+    }
+    #yellow2
+    {
+        position: absolute;
+        margin-left: -0.5em;
+        margin-top: 67em;
+        max-width: 100%;
+        height: 15em;
+    }
+    #text14
+    {
+        position: absolute;
+        font-size: 6vw;
+        font-weight: bolder;
+    }
+    #text15
+    {
+        position: absolute;
+        font-size: 3vw;
+        margin-left: 0em;
+        display: none;
+    }
+    #text25
+    {
+        display: block;
+        color: #000000;
+        z-index: 2;
+        font-size: 4vw;
+        margin-top: 5em;
+        font-weight: bold;
+        margin-left: 0.4em;
+    }
+    #btn8
+    {
+        font-size: 4.5vw;
+        margin-left: 6.3em;
+        margin-top: 7em;
+    }
+    #blackbox2{
+        position: absolute;
+        margin-left: -0.5em;
+        margin-top: 82em;
+        max-width: 100%;
+        height: 35em;
+       
+    }
+    #hack{
+        position: absolute;
+        height: 5em;
+        width: 5em;
+        margin-left: 15em;
+        z-index: 2;
+    }
+    #text23{
+        position: absolute;
+        margin-left: 7.5em;
+        margin-top: 85em;
+        font-size: 1em;
+
+    }
+    #text22{
+        position: absolute;
+        font-size: 1em;
+    }
+    #copy3{
+        margin-left: 0em;
+    }
+
+}
+
+
+
